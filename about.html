@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Savanna & Summit</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#eef7ea;color:#333;}
+.hero{
+    width:100%;
+    min-height:100vh; 
+    
+    /* BACKGROUND IMAGE */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url('chimpanzee.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    color:white;
+}
+
+/* NAVIGATION */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:rgba(255,255,255,0.08); 
+    backdrop-filter: blur(3px);
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:gold;
+}
+
+/* HERO CONTENT */
+.hero-content{
+    text-align:center;
+    padding:80px 20px;
+    margin-bottom:100px;
+}
+
+.hero-content marquee{
+    font-size:30px;
+    color:gold;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero-content h2{
+    font-size:55px;
+    margin-bottom:20px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-content p{
+    font-size:22px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* LOGO */
+.custom-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.custom-logo img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    border-radius:50%;
+    background:white;
+    padding:5px;
+}
+
+.company-name h1{
+    margin:0;
+    font-size:28px;
+    color:white;
+}
+
+.company-name p{
+    margin:0;
+    color:gold;
+    letter-spacing:3px;
+}
+
+header{
+    background:linear-gradient(rgba(0,80,40,0.5),rgba(0,80,40,0.5)),
+    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1500&q=80');
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    color:white;
+}
+section{padding:60px 10%;}
+h2{color:#2e8b57;text-align:center;}
+.team{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+.card{
+background:white;padding:20px;border-radius:10px;text-align:center;
+}
+footer{background:#14532d;color:white;text-align:center;padding:20px;}
+</style>
+</head>
+<body>
+<header class="hero">
+
+    <!-- Navigation -->
+    <nav>
+        <div class="custom-logo">
+            <img src="logo.png" alt="Company Logo">
+            <div class="company-name">
+                <h1>Savanna & Summit</h1>
+                <p>Tours & Travels</p>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <marquee behavior="scroll" direction="left">
+            Welcome to Savanna & Summit Tours and Travels –<strong>All About Us </strong>!
+        </marquee>
+
+        <h2>About Savannah & Summit </h2>
+        <p>Your Trusted Travel Companion For Nature,Culture And Adventure.</p>
+    </div>
+
+</header>
+
+<section>
+<h2>Who We Are</h2>
+<p>
+Savanna & Summit Tours & Travel specializes in curated safari adventures,
+mountain expeditions, eco-tourism, and luxury travel experiences across East Africa and beyond.
+Our mission is to connect travelers with unforgettable landscapes while promoting sustainable tourism.
+</p>
+
+<h2>Our Vision</h2>
+<p>To become Africa’s leading adventure and eco-travel company.</p>
+
+<h2>Our Team</h2>
+<div class="team">
+<div class="card">
+<h3>Tour Guides</h3>
+<p>Professional local experts with deep destination knowledge.</p>
+</div>
+<div class="card">
+<h3>Travel Consultants</h3>
+<p>Customizing every trip for comfort and adventure.</p>
+</div>
+<div class="card">
+<h3>Support Team</h3>
+<p>Dedicated customer care from booking to return.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 Savanna & Summit Tours & Travel</p>
+</footer>
+
+</body>
+</html>
+

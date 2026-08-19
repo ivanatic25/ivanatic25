@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Savanna & Summit</title>
+<style>
+body{margin:0;font-family:Arial;background:#eef7ea;}
+nav{text-align:center;background:#14532d;padding:15px;}
+nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;}
+.hero{
+    width:100%;
+    min-height:100vh; 
+    
+    /* BACKGROUND IMAGE */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url('chimpanzee.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    color:white;
+}
+
+/* NAVIGATION */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:rgba(255,255,255,0.08); 
+    backdrop-filter: blur(3px);
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:gold;
+}
+
+/* HERO CONTENT */
+.hero-content{
+    text-align:center;
+    padding:80px 20px;
+    margin-bottom:100px;
+}
+
+.hero-content marquee{
+    font-size:30px;
+    color:gold;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero-content h2{
+    font-size:55px;
+    margin-bottom:20px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-content p{
+    font-size:22px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* LOGO */
+.custom-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.custom-logo img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    border-radius:50%;
+    background:white;
+    padding:5px;
+}
+
+.company-name h1{
+    margin:0;
+    font-size:28px;
+    color:white;
+}
+
+.company-name p{
+    margin:0;
+    color:gold;
+    letter-spacing:3px;
+}
+
+header{
+    background:linear-gradient(rgba(0,80,40,0.5),rgba(0,80,40,0.5)),
+    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1500&q=80');
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    color:white;
+}
+section{padding:50px 10%;}
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+background:white;
+padding:30px;
+border-radius:12px;
+}
+input,textarea{
+margin-bottom:15px;
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+button{
+background:#2e8b57;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+font-size:16px;
+}
+h2{text-align:center;color:#2e8b57;margin-bottom:30px;font-size:38px;}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+footer{background:#14532d;color:white;text-align:center;padding:20px;margin-top:30px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+
+    <!-- Navigation -->
+    <nav>
+        <div class="custom-logo">
+            <img src="logo.png" alt="Company Logo">
+            <div class="company-name">
+                <h1>Savanna & Summit</h1>
+                <p>Tours & Travels</p>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <marquee behavior="scroll" direction="left">
+            Welcome to Savanna & Summit Tours and Travels –<strong> For Contacts And Bookings</strong>!
+        </marquee>
+
+        <h2>Contact & Bookings</h2>
+        <p>Start Your Next Adventure Today.</p>
+    </div>
+
+</header>
+
+<section>
+<form>
+<input type="text" placeholder="Your Full Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="tel" placeholder="Phone Number">
+<textarea rows="5" placeholder="Your Destination / Inquiry"></textarea>
+<button type="submit">Book Now</button>
+</form>
+
+<p style="text-align:center;margin-top:20px;">
+Email: info@savannasummit.com | Phone: +256 700 123456
+</p>
+</section>
+
+<footer>
+<p>&copy; 2026 Savanna & Summit Tours & Travel</p>
+</footer>
+
+</body>
+</html>
